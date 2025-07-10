@@ -7,4 +7,38 @@ GET {{baseUrl}}/health
 ###
 
 # Get Rooms
+# @name GetRoom
 GET {{baseUrl}}/rooms
+
+###
+
+# Create Room
+# @name createRoom
+POST {{baseUrl}}/rooms
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Sala 1",
+    "description": "Esta é a sala 1"
+}
+
+###
+
+@roomId = {{createRoom.response.body.$.roomId}}
+
+###
+
+# Get Rooms Questions
+# @name GetQuestion
+GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+### 
+# @name createQuestion
+POST {{baseUrl}}/rooms/{{roomId}}/questions
+Accept: application/json
+Content-Type: application/json
+
+{
+    "question":"O que é clean code?"    
+}
