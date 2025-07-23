@@ -15,6 +15,13 @@
       "when": 1752178385610,
       "tag": "0001_happy_wiccan",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752356124287,
+      "tag": "0002_solid_juggernaut",
+      "breakpoints": true
     }
   ]
 }

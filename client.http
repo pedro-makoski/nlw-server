@@ -42,3 +42,14 @@ Content-Type: application/json
 {
     "question":"O que é clean code?"    
 }
+
+### 
+
+# @name createQuestion
+POST {{baseUrl}}/rooms/bf834c36-97ed-4a1f-9598-773b0399d379/questions
+Accept: application/json
+Content-Type: application/json
+
+{
+    "question":"O que é vue.js e a sua diferença em relação ao Angular?"    
+}
